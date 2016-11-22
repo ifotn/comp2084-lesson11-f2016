@@ -26,5 +26,15 @@ namespace Week11.Controllers
 
             return View();
         }
+
+        public ActionResult Location()
+        {
+            // set a message to be displayed in the view
+            ViewBag.Message = "We will show a map here soon.";
+
+            // load the new view
+            return View();
+            //return View("~/Views/Home/artem.cshtml");
+        }
     }
 }

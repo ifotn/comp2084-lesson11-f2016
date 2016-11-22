@@ -9,21 +9,19 @@ namespace Week11.Controllers
     public class StoreController : Controller
     {
         // GET: Store
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        // GET: /Store
-        public String Index()
+        public ActionResult Index()
         {
-            return "Hello from Store.Index()";
+            return View();
         }
 
         // GET: /Store/Browse
-        public String Browse()
+        public ActionResult Browse()
         {
-            return "Hello from Store.Browse()";
+            // create array of hard-coded genres
+            var genres = new string[] { "Rock", "Jazz", "Metal" };
+
+            ViewBag.genres = genres;
+            return View();
         }
 
         // GET: /Store/Details
